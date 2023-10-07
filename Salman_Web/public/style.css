@@ -1,0 +1,318 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.logo{
+    width: 100px;
+    height: 80px;
+    margin-left: -10px;
+    margin-top: -10px;
+}
+/* Navbar */
+.nav-link:hover{
+    background-color: red;
+    border-radius: 10px;
+}
+.dropdown-menu {
+    max-height: 300px; 
+    overflow-y: auto; 
+}
+
+.zIndex{
+    z-index: 999;
+}
+@media screen and (max-width: 767px) {
+    .imageCEO{
+        margin-top: 7px;
+    }
+}
+
+/* Center-align the navigation links when the mobile menu is active */
+@media screen and (max-width: 990px) {
+    .navbar-collapse.collapse.show {
+        text-align: center;
+    }
+    .navbar-collapse.collapse.show ul.navbar-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-collapse.collapse.show ul.navbar-nav li.nav-item {
+        margin-bottom: 10px; 
+    }
+
+    .navbar-collapse.collapse.show form.d-flex {
+        margin-top: 20px; 
+    }
+}
+
+
+/* section 3 */
+.section3{
+    
+    background-color: rgba(255, 0, 0, 0.411) ;
+}
+.content{
+    background-color: black;
+    color: white;
+}
+
+#image-transition {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+#image-transition:hover {
+    opacity: 0.7; 
+}
+
+
+
+
+
+/* section 4 */
+.section4{
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    padding-bottom: 7vh;
+    padding-top: 7vh;
+}
+.iconsize{
+    font-size: 5rem;
+}
+.margintop{
+    margin-top: 10vh;
+}
+.iconsection{
+    border-right: 5px solid white;
+}
+
+
+#person-icon {
+    animation: walk 1s ease-in-out infinite;
+    transform-origin: center bottom;
+}
+/* 
+For human */
+
+@keyframes walk {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+    25% {
+        transform: translateY(-10px) rotate(-5deg);
+    }
+    50% {
+        transform: translateY(0) rotate(0deg);
+    }
+    75% {
+        transform: translateY(-10px) rotate(5deg);
+    }
+    100% {
+        transform: translateY(0) rotate(0deg);
+    }
+}
+
+
+/* for email */
+/* Define the animation */
+/* Define the animation */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-5px);
+    }
+    60% {
+        transform: translateY(-3px);
+    }
+}
+
+/* Apply the animation continuously */
+.animated-email {
+    animation: bounce 1s infinite;
+}
+
+
+/* For truck */
+#truck-image {
+    animation: move-truck 3s ease-in-out infinite, rotate-truck 5s linear infinite, scale-truck 2s ease-in-out infinite;
+}
+
+@keyframes move-truck {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(10px);
+    }
+}
+
+@keyframes rotate-truck {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(10deg);
+    }
+}
+
+@keyframes scale-truck {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+/* MEDIA QUERIES FOR SECTION 4: */
+@media screen and (max-width: 767px) {
+    .iconsection{
+        border-bottom: 5px solid white;
+        border-right: none;
+    }
+}
+
+
+
+/* About page
+Section 5 */
+.section5{
+    background-color: black;
+    color: white;
+}
+.bold{
+    font-weight: bold;
+}
+
+.image-transition {
+    transition: opacity 0.5s ease-in-out;
+}
+
+.image-transition:hover {
+    opacity: 0.7; /* Adjust the opacity as needed */
+}
+
+
+
+
+/* Service Page:
+section6 */
+.section6{
+    /* background-color: #8B0000; */
+    background-image: url("images/service_bg.jpeg");
+    background-position: center;
+    background-size: cover;
+    color: white;
+    overflow: hidden;
+   
+}
+.bgcards{
+    background-color: black;
+    border-radius: 10px;
+   
+}
+.bgcards:hover {
+    box-shadow: 9px 9px 9px rgba(247, 171, 171, 0.377);
+}
+
+.cardhead{
+    border-bottom: 2px solid white;
+    padding: 15px;
+}
+
+
+
+
+/* Customer Reviews: */
+/* section 7 */
+.section7{
+    background-image: url("images/Review\ bg.png");
+   
+}
+.marginreview{
+    margin-left: 30vw;
+}
+.box1{
+    background-color: white;
+    width: 100%;
+    box-shadow: 3px 3px 3px grey;
+    border-radius: 10px;
+}
+.borderd{
+    border-right: 2px solid black;
+}
+
+
+
+
+/* section8 */
+/* contact form */
+.section8{
+    background: linear-gradient(0deg, rgba(167,22,7,0.8827906162464986) 0%, rgba(22,7,7,1) 55%);
+    color: white;
+}
+.submit{
+    background-color: red;
+    width: 35%;
+}
+
+  /* Text aur input field ko horizontal center me align karne ke liye CSS */
+  /* label {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+   
+  } */
+  label {
+    display: block;
+    text-align: left;
+    margin-bottom: 10px; /* Optional: Distant between label and input field */
+  }
+
+  /* Input field ko center me set karein */
+  input {
+    display: block;
+    margin: 0 auto;
+  }
+
+
+.animated-text {
+  display: inline-block;
+  transform-origin: center;
+  animation: scale-up 1s infinite alternate;
+}
+
+@keyframes scale-up {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+  
+
+.section9{
+    background: linear-gradient(0deg, rgba(240,76,31,0.8827906162464986) 0%, rgba(22,7,7,1) 35%);
+    color: white;
+}
+.col2sec9{
+    border: 2px solid white;
+    border-bottom: none;
+}
+.footerimg{
+    border-radius: 50%;
+}
+.copyright{
+    color: rgba(255, 255, 255, 0.692)
+}
+body{
+    overflow-x: hidden;
+}
